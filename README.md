@@ -58,7 +58,7 @@ The Power BI dashboard provides interactive insights into:
 * `02_business_analysis.sql` – SQL analysis queries
 * `Amazon_Sales_Dashboard.pbix` – Power BI dashboard
 * Dashboard screenshots
-
+* Dataset: The original dataset has been excluded from this repository due to GitHub file size limitations. The analysis can be reproduced using the Amazon Sales         Report dataset available on Kaggle.
 ## Author
 
 **Puneet Kaur**
