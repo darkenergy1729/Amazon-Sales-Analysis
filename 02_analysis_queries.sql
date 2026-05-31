@@ -170,3 +170,15 @@ FROM amazon_sale
 WHERE Status NOT LIKE '%Cancelled%'
 GROUP BY SKU;
 
+
+-- =====================================================
+-- 12. B2B VS B2C ANALYSIS
+-- =====================================================
+
+SELECT
+    CASE WHEN B2B = 'TRUE' THEN 'B2B' ELSE 'B2C' END AS business_type,
+    ROUND(SUM(Amount),2) AS revenue,
+    COUNT(DISTINCT Order_ID) AS orders
+FROM amazon_sale
+WHERE Status NOT LIKE '%Cancelled%'
+GROUP BY business_type;
